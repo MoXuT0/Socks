@@ -25,7 +25,7 @@ public enum Colour {
     @JsonCreator
     public static Colour parse(String colour) {
         for (Colour c : values()) {
-            if (c.name().equals(colour)) {
+            if (colour.equals(c.getColour())) {
                 return c;
             }
         }

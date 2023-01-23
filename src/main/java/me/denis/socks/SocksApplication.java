@@ -1,11 +1,11 @@
 package me.denis.socks;
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import lombok.extern.jackson.Jacksonized;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@JsonSerialize
+@Jacksonized
 public class SocksApplication {
 
     public static void main(String[] args) {
